@@ -1,0 +1,93 @@
+{
+  "products": [
+    {
+      "id": "6",
+      "name": "Gaming Laptop",
+      "price": 1299.99,
+      "image": "/assets/gaming-laptop.jpg"
+    },
+    {
+      "id": "7",
+      "name": "DSLR Camera",
+      "price": 799.99,
+      "image": "/assets/dslr-camera.jpg"
+    },
+    {
+      "id": "8",
+      "name": "Ultrabook",
+      "price": 1099.99,
+      "image": "/assets/ultrabook.jpg"
+    },
+    {
+      "id": "9",
+      "name": "4K Action Camera",
+      "price": 249.99,
+      "image": "/assets/action-camera.jpg"
+    }
+  ],
+  "cart": [
+    {
+      "id": "6",
+      "name": "Gaming Laptop",
+      "price": 1299.99,
+      "image": "/assets/gaming-laptop.jpg",
+      "quantity": 1
+    },
+    {
+      "id": "6",
+      "name": "Gaming Laptop",
+      "price": 1299.99,
+      "image": "/assets/gaming-laptop.jpg",
+      "quantity": 1
+    },
+    {
+      "id": "6",
+      "name": "Gaming Laptop",
+      "price": 1299.99,
+      "image": "/assets/gaming-laptop.jpg",
+      "quantity": 1
+    },
+    {
+      "id": "6",
+      "name": "Gaming Laptop",
+      "price": 1299.99,
+      "image": "/assets/gaming-laptop.jpg",
+      "quantity": 1
+    },
+    {
+      "id": "7",
+      "name": "DSLR Camera",
+      "price": 799.99,
+      "image": "/assets/dslr-camera.jpg",
+      "quantity": 1
+    },
+    {
+      "id": "6",
+      "name": "Gaming Laptop",
+      "price": 1299.99,
+      "image": "/assets/gaming-laptop.jpg",
+      "quantity": 1
+    },
+    {
+      "id": "7",
+      "name": "DSLR Camera",
+      "price": 799.99,
+      "image": "/assets/dslr-camera.jpg",
+      "quantity": 1
+    },
+    {
+      "id": "7",
+      "name": "DSLR Camera",
+      "price": 799.99,
+      "image": "/assets/dslr-camera.jpg",
+      "quantity": 1
+    },
+    {
+      "id": "6",
+      "name": "Gaming Laptop",
+      "price": 1299.99,
+      "image": "/assets/gaming-laptop.jpg",
+      "quantity": 1
+    }
+  ]
+}
