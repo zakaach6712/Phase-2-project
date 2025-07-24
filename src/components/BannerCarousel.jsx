@@ -11,7 +11,7 @@ export default function BannerCarousel() {
     dots: true,
     infinite: true,
     autoplay: true,
-    autoplaySpeed: 3500,
+    autoplaySpeed: 2500,
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
