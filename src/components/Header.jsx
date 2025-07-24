@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { getExchangeRates } from '../api/api';
-import trolleyLogo from '../logo-image/trolley-image.jpg'; // ✅ Import your logo image
+import trolleyLogo from '../logo-image/trolley-image.jpg'; // Import your logo image
 
 export default function Header() {
   const [rate, setRate] = useState(null);
@@ -75,7 +75,7 @@ export default function Header() {
         {loading && ' Updating exchange rate...'}
         {error && (
           <>
-            ⚠️ Error loading rates
+             Error loading rates
             <button
               onClick={fetchRates}
               style={{
