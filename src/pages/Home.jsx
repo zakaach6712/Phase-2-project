@@ -3,13 +3,15 @@ import ProductList from '../components/ProductList';
 import Cart from '../components/Cart';
 import { getProducts, getCartItems } from '../api/api';
 
-export default function Home() {
-  const [products, setProducts] = useState([]);
+export default function Home({products}) {
+  
   const [cartItems, setCartItems] = useState([]);
 
   useEffect(() => {
-    getProducts().then(res => setProducts(res.data));
-    getCartItems().then(res => setCartItems(res.data));
+    
+    getCartItems()
+    .then(res => setCartItems(res.data))
+     .catch(err => console.error('Error fetching cart items:'))
   }, []);
 
   return (

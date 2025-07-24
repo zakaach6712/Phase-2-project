@@ -1,34 +1,35 @@
 import React, { useState } from 'react';
-import { addToCart } from '../api/api';
+import { addToCart, getCartItems } from '../api/api';
 
-const fallbackImage = '/assets/placeholder.jpg'; // Optional default image
+const fallbackImage = '/assets/placeholder.jpg'; // Optional fallback image
 
 export default function ProductCard({ product, refreshCart }) {
   const [loading, setLoading] = useState(false);
   const [imageError, setImageError] = useState(false);
+  const [isHovered, setIsHovered] = useState(false); // ✨ Hover state
 
   const handleAdd = () => {
     setLoading(true);
     addToCart(product)
-      .then(() => {
-        // Refresh cart state
-        refreshCart(prev => [...prev]);
-      })
+      .then(() => getCartItems())
+      .then(res => refreshCart(res.data))
       .finally(() => setLoading(false));
   };
-   
-  
-
 
   return (
     <div
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
       style={{
-        background: 'white',
+        background: '#ffffff',
         borderRadius: '10px',
         padding: '1rem',
-        boxShadow: '0 2px 8px rgba(0,0,0,0.1)',
+        boxShadow: isHovered
+          ? '0 4px 12px rgba(0, 0, 0, 0.2)'
+          : '0 2px 8px rgba(0, 0, 0, 0.1)',
+        transform: isHovered ? 'scale(1.05)' : 'scale(1)',
         textAlign: 'center',
-        transition: 'transform 0.2s ease-in-out',
+        transition: 'transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out',
       }}
     >
       <img
@@ -53,12 +54,14 @@ export default function ProductCard({ product, refreshCart }) {
         onClick={handleAdd}
         disabled={loading}
         style={{
-          backgroundColor: 'var(--button)',
+          backgroundColor: 'var(--button)', // define this in global styles or CSS
           color: 'white',
           padding: '0.5rem 1rem',
           borderRadius: '6px',
           border: 'none',
           fontWeight: 'bold',
+          boxShadow: isHovered ? '0 2px 6px rgba(0,0,0,0.15)' : 'none',
+          cursor: loading ? 'default' : 'pointer',
         }}
       >
         {loading ? 'Adding…' : 'Add to Cart'}

@@ -30,7 +30,7 @@ export default function Header() {
   return (
     <header
       style={{
-        backgroundColor: '#ffffff',
+        backgroundColor: '#FFA500',
         color: '#333',
         padding: '1rem 2rem',
         display: 'flex',
@@ -38,31 +38,38 @@ export default function Header() {
         alignItems: 'center',
         borderBottom: '1px solid #ddd',
         fontFamily: 'Segoe UI, sans-serif',
-        boxShadow: '0 2px 4px rgba(0,0,0,0.05)'
+        boxShadow: '0 2px 4px rgba(0,0,0,0.05)',
+
+        position: 'sticky',
+        top: 0,
+        zIndex: 1000,
+        backdropFilter: 'blur(4px)',
       }}
     >
       <div style={{ display: 'flex', alignItems: 'center' }}>
-        <img
-          src={trolleyLogo}
-          alt="QuickMart Logo"
-          style={{
-            height: '60px',
-            width: '60px',
-            marginRight: '0.6rem',
-            objectFit: 'contain',
-            borderRadius:'35px'
-          }}
-        />
-        <h1 style={{
-          margin: 0,
-          fontSize: '1.5rem',
-          fontWeight: '600',
-          fontFamily: 'Montserrat, sans-serif',
-          color: '#0073e6'
-        }}>
-          QuickMart
-        </h1>
-      </div>
+  <img
+    src={trolleyLogo}
+    alt="QuickMart Logo"
+    style={{
+      height: '100px',
+      width: '100px',
+      marginRight: '0.6rem',
+      objectFit: 'contain',
+      borderRadius: '20px' // fixed this too
+    }}
+  />
+  <h1 style={{
+    margin: 0,
+    fontSize: '1.5rem',
+    fontWeight: '600',
+    fontFamily: 'Montserrat, sans-serif',
+    color: '#0073e6'
+  }}>
+    Quick
+    <span style={{ color: '#ffffff' }}>Mart</span>
+  </h1>
+</div>
+
 
       <div style={{ fontSize: '0.95rem', display: 'flex', alignItems: 'center' }}>
         {loading && ' Updating exchange rate...'}
@@ -91,7 +98,14 @@ export default function Header() {
              1 USD = {rate.toFixed(2)} KES
           </span>
         )}
+          
+        
       </div>
+
+      
+
+            
+      
     </header>
   );
 }

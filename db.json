@@ -2,8 +2,8 @@
   "products": [
     {
       "id": "6",
-      "name": "Gaming Laptop",
-      "price": 1299.99,
+      "name": "LG UltraGear 34GN850-B",
+      "price": 199000.99,
       "image": "/assets/gaming-laptop.jpg"
     },
     {
@@ -14,7 +14,7 @@
     },
     {
       "id": "8",
-      "name": "Ultrabook",
+      "name": "Iphone 11",
       "price": 1099.99,
       "image": "/assets/ultrabook.jpg"
     },
@@ -23,71 +23,31 @@
       "name": "4K Action Camera",
       "price": 249.99,
       "image": "/assets/action-camera.jpg"
+    },
+    {
+      "id": "10",
+      "name": "DRONE CAMERA",
+      "price": 50000.25,
+      "image": "/assets/drown-camera.jpg"
+    },
+    {
+      "id": "11",
+      "name": "Moneyfest",
+      "price": 7000000,
+      "image": "/assets/Moneyfest.jpg"
+    },
+    {
+      "id": "12",
+      "name": "Matrix",
+      "price": 7000000,
+      "image": "/assets/Matrix.jpg"
+    },
+    {
+      "id": "13",
+      "name": "Stinger",
+      "price": 3000000,
+      "image": "/assets/Stinger.jpg"
     }
   ],
-  "cart": [
-    {
-      "id": "6",
-      "name": "Gaming Laptop",
-      "price": 1299.99,
-      "image": "/assets/gaming-laptop.jpg",
-      "quantity": 1
-    },
-    {
-      "id": "6",
-      "name": "Gaming Laptop",
-      "price": 1299.99,
-      "image": "/assets/gaming-laptop.jpg",
-      "quantity": 1
-    },
-    {
-      "id": "6",
-      "name": "Gaming Laptop",
-      "price": 1299.99,
-      "image": "/assets/gaming-laptop.jpg",
-      "quantity": 1
-    },
-    {
-      "id": "6",
-      "name": "Gaming Laptop",
-      "price": 1299.99,
-      "image": "/assets/gaming-laptop.jpg",
-      "quantity": 1
-    },
-    {
-      "id": "7",
-      "name": "DSLR Camera",
-      "price": 799.99,
-      "image": "/assets/dslr-camera.jpg",
-      "quantity": 1
-    },
-    {
-      "id": "6",
-      "name": "Gaming Laptop",
-      "price": 1299.99,
-      "image": "/assets/gaming-laptop.jpg",
-      "quantity": 1
-    },
-    {
-      "id": "7",
-      "name": "DSLR Camera",
-      "price": 799.99,
-      "image": "/assets/dslr-camera.jpg",
-      "quantity": 1
-    },
-    {
-      "id": "7",
-      "name": "DSLR Camera",
-      "price": 799.99,
-      "image": "/assets/dslr-camera.jpg",
-      "quantity": 1
-    },
-    {
-      "id": "6",
-      "name": "Gaming Laptop",
-      "price": 1299.99,
-      "image": "/assets/gaming-laptop.jpg",
-      "quantity": 1
-    }
-  ]
+  "cart": []
 }
