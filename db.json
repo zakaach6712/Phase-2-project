@@ -33,6 +33,7 @@
     {
       "id": "11",
       "name": "Moneyfest",
+      "category": "jumia",
       "price": 7000000,
       "image": "/assets/Moneyfest.jpg"
     },
@@ -49,5 +50,6 @@
       "image": "/assets/Stinger.jpg"
     }
   ],
+  
   "cart": []
 }
