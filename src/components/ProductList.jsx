@@ -20,7 +20,7 @@ export default function ProductList({ products, refreshCart }) {
     <section style={{ flex: 1, padding: '1rem' }}>
       <h2 style={{ fontSize: '1.5rem', fontWeight: 'bold' }}>Products</h2>
       
-      {/* Compare Button */}
+      
       <div style={{ marginTop: '1rem', textAlign: 'center' }}>
         <button
           disabled={selectedProducts.length < 2}

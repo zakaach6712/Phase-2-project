@@ -18,7 +18,7 @@ function CompareModal({ products, selectedProducts, onClose }) {
               <p className={highlight(product.category, compared.map(p => p.category))}>
                 Category: {product.category}
               </p>
-              {/* Add more fields if needed */}
+              
             </div>
           ))}
         </div>

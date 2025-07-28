@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { addToCart, getCartItems } from '../api/api';
 
-const fallbackImage = '/assets/placeholder.jpg'; // Optional fallback image
+const fallbackImage = '/assets/placeholder.jpg'; 
 
 export default function ProductCard({ product, refreshCart }) {
   const [loading, setLoading] = useState(false);
   const [imageError, setImageError] = useState(false);
-  const [isHovered, setIsHovered] = useState(false); //  Hover state
+  const [isHovered, setIsHovered] = useState(false); 
 
   const handleAdd = () => {
     setLoading(true);
@@ -54,7 +54,7 @@ export default function ProductCard({ product, refreshCart }) {
         onClick={handleAdd}
         disabled={loading}
         style={{
-          backgroundColor: 'var(--button)', // define this in global styles or CSS
+          backgroundColor: 'var(--button)', 
           color: 'white',
           padding: '0.5rem 1rem',
           borderRadius: '6px',

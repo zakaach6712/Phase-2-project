@@ -1,8 +1,8 @@
-// BannerCarousel.jsx
+
 import React from 'react';
 import Slider from 'react-slick';
 
-// Slick styles
+
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
@@ -15,8 +15,8 @@ export default function BannerCarousel() {
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
-    fade: true,            // Optional: adds a fade transition effect
-    cssEase: 'ease-in-out' // Makes fade smooth
+    fade: true,            
+    cssEase: 'ease-in-out' 
   };
 
   const banners = [

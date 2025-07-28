@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { getExchangeRates } from '../api/api';
-import trolleyLogo from '../logo-image/trolley-image.jpg'; // Import your logo image
+import trolleyLogo from '../logo-image/trolley-image.jpg'; 
 
 export default function Header() {
   const [rate, setRate] = useState(null);

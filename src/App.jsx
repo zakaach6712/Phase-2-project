@@ -8,7 +8,7 @@ import CompareModal from './components/CompareModal';
 
 import axios from 'axios';
 
-const API_URL = 'http://localhost:3001/products';
+const API_URL = 'https://phase-2-project-1-zksx.onrender.com/products';
 
 export default function App() {
   const [products, setProducts] = useState([]);
@@ -43,16 +43,14 @@ export default function App() {
       <SearchBar value={search} onChange={setSearch} />
       <BannerCarousel />
 
-      {/* Product Display + Selection */}
+  
       <Home
         products={filtered}
         selectedProducts={selectedProducts}
         handleSelect={handleSelect}
       />
 
-      
-
-      {/* Modal */}
+    
       {showCompareModal && (
         <CompareModal
           products={products}
