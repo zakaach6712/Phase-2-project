@@ -6,7 +6,7 @@ const fallbackImage = '/assets/placeholder.jpg'; // Optional fallback image
 export default function ProductCard({ product, refreshCart }) {
   const [loading, setLoading] = useState(false);
   const [imageError, setImageError] = useState(false);
-  const [isHovered, setIsHovered] = useState(false); // ✨ Hover state
+  const [isHovered, setIsHovered] = useState(false); //  Hover state
 
   const handleAdd = () => {
     setLoading(true);

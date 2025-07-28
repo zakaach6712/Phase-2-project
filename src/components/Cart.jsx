@@ -27,7 +27,7 @@ export default function Cart({ cartItems, refreshCart }) {
     clearCartItems().then(() =>
       getCartItems().then(res => {
         refreshCart(res.data);
-        alert('Checkout complete! 🛍️');
+        alert('Checkout complete! ');
         setCheckingOut(false);
       })
     );
