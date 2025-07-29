@@ -40,6 +40,7 @@
     {
       "id": "12",
       "name": "Matrix",
+      "category": "Kilimall",
       "price": 7000000,
       "image": "/assets/Matrix.jpg"
     },
@@ -50,6 +51,5 @@
       "image": "/assets/Stinger.jpg"
     }
   ],
-  
   "cart": []
 }
